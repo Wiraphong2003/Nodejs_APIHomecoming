@@ -30,7 +30,10 @@ app.post("/registration", (req, res) => {
   // ส่งตอบรับกลับไปยังผู้ใช้
   res.json({ message: "ลงทะเบียนสำเร็จ" });
 });
-
+app.get("/", (req, res)=>{
+    res.send("API Homecoming");
+  });
+  
 
 app.post('/register', async (req, res) => {
     try {
